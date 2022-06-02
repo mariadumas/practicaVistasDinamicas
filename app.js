@@ -9,6 +9,6 @@ app.set("view engine", "ejs");
 
 app.use('/', mainRouter)
 
-app.listen(3030, () => {
-    console.log("Example app listening port on port 3030");
+app.listen(process.env.PORT || 3030, () => {
+    console.log("Sevidor corriendo en http://localhost:3030");
 })
